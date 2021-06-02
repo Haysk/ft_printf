@@ -6,13 +6,13 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/06 15:06:55 by adylewsk          #+#    #+#             */
-/*   Updated: 2021/01/21 16:04:29 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/02/04 18:59:23 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header/libftprintf.h"
 
-int	ft_convert_to_fonc(t_param param, va_list argu)
+int		ft_convert_to_fonc(t_param param, va_list argu)
 {
 	int						i;
 	static t_map_foncptr	convert_to_fonc[10] = {

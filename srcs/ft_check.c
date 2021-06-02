@@ -6,7 +6,7 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 09:07:45 by adylewsk          #+#    #+#             */
-/*   Updated: 2021/01/28 16:12:19 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/02/04 18:58:54 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ t_param	ft_checkflag(t_param param, const char **format)
 	return (param);
 }
 
-int	ft_checknbr(va_list argu, const char **format)
+int		ft_checknbr(va_list argu, const char **format)
 {
 	int	i;
 

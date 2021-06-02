@@ -6,7 +6,7 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/03 02:41:32 by adylewsk          #+#    #+#             */
-/*   Updated: 2021/02/04 18:18:11 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/02/04 19:16:34 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,11 @@
 int	ft_print_ptr(t_param *param, char *str)
 {
 	int	i;
-	int	str_len;
 
 	i = 0;
-	str_len = ft_strlen(str);
 	if (!str)
 		return (0);
-	if (str_len <= 1 && *str == '0')
+	if (ft_strlen(str) <= 1 && *str == '0')
 	{
 		if (param->precision < 0)
 		{
@@ -32,8 +30,8 @@ int	ft_print_ptr(t_param *param, char *str)
 		i += ft_reput('0', param->precision);
 		return (i);
 	}
-	i += ft_reput('0', param->precision - str_len);
-	while (i < ft_max(str_len, param->precision) && *str)
+	i += ft_reput('0', param->precision - ft_strlen(str));
+	while (*str)
 	{
 		ft_putchar(*str);
 		str++;
