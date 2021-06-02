@@ -6,14 +6,14 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 14:11:20 by adylewsk          #+#    #+#             */
-/*   Updated: 2021/01/28 16:08:38 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/02/04 18:53:03 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PRINTFSTRUCT_H
 # define PRINTFSTRUCT_H
 
-typedef struct s_param
+typedef struct	s_param
 {
 	char	flag;
 	char	convert;
@@ -22,13 +22,13 @@ typedef struct s_param
 	int		error;
 }				t_param;
 
-typedef struct s_map_base
+typedef struct	s_map_base
 {
 	char	convert;
 	char	*base;
 }				t_map_base;
 
-typedef struct s_map_foncptr
+typedef struct	s_map_foncptr
 {
 	char	convert;
 	int		(*fonc_convert)(t_param, va_list);

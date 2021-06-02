@@ -6,13 +6,13 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 14:36:55 by adylewsk          #+#    #+#             */
-/*   Updated: 2021/01/27 23:48:29 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/02/04 18:58:13 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../header/libftprintf.h"
 
-int	ft_itoa_len(long nbr, int len_base)
+int				ft_itoa_len(long nbr, int len_base)
 {
 	int	result;
 
@@ -25,7 +25,7 @@ int	ft_itoa_len(long nbr, int len_base)
 	return (result);
 }
 
-char	ft_itoa_sign(long *nbr, int *len, int len_base)
+char			ft_itoa_sign(long *nbr, int *len, int len_base)
 {
 	*len = 0;
 	if (*nbr >= 0)
@@ -40,7 +40,7 @@ char	ft_itoa_sign(long *nbr, int *len, int len_base)
 	return (0);
 }
 
-char	*ft_itoa_base(long nbr, char *base)
+char			*ft_itoa_base(long nbr, char *base)
 {
 	long	len_base;
 	int		len;
@@ -82,7 +82,7 @@ unsigned	int	ft_nbrlen_base(unsigned int nbr, unsigned int lenbase)
 	return (i);
 }
 
-char	*ft_uitoa(unsigned int ui)
+char			*ft_uitoa(unsigned int ui)
 {
 	char			c;
 	char			*str;

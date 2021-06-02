@@ -6,7 +6,7 @@
 /*   By: adylewsk <adylewsk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/23 14:33:44 by adylewsk          #+#    #+#             */
-/*   Updated: 2021/02/03 04:30:18 by adylewsk         ###   ########.fr       */
+/*   Updated: 2021/06/02 23:24:37 by adylewsk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,11 +50,9 @@ int	ft_print_champ(t_param *param, char *str)
 {
 	int		ret_value;
 	int		len_precision;
-	char	fill_character;
 
 	ret_value = 0;
 	len_precision = 0;
-	fill_character = ' ';
 	if (!str)
 		return (0);
 	if (param->flag != '-')
